@@ -1,4 +1,167 @@
 /* styles.css */
+
+/* Colors */
+
+:root {
+  --background-clr: #f0f4f8;
+  --primary-accent: #1e88e5;
+  --text-main: #333;
+  --text-sec: #888;
+}
+
+/* Resets */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rebeccapurple;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.weather-app {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.weather-app__title {
+  margin-bottom: 20px;
+  color: #1e88e5;
+}
+
+.weather-app__input {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333333;
+}
+
+.weather-app__button {
+  padding: 10px 15px;
+  background: #1e88e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.weather-app__button:hover {
+  background: #1565c0;
+}
+
+.weather-app__info {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333333;
+}
+
+.forecast {
+  margin-top: 20px;
+}
+
+.forecast__title {
+  color: #1e88e5;
+  margin: 2rem 0;
+}
+
+.forecast__container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.forecast__card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 150px;
+}
+
+.forecast__card-title {
+  color: #1e88e5;
+  margin-bottom: 10px;
+}
+
+.forecast__card-temp {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.forecast__card-condition {
+  color: #888888;
 }
