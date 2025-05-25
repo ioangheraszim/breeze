@@ -8,14 +8,14 @@
   <body>
     <div id="content">
       <div class="weather-app">
-        <h1 class="weather-app__title">Weather App</h1>
+        <h1 class="weather-app__title">Breeze App</h1>
         <input
           type="text"
           id="location"
           class="weather-app__input"
           placeholder="Enter location"
         />
-        <button class="weather-app__button">Get Weather</button>
+        <button class="weather-app__button">Weather</button>
         <div class="weather-app__info" id="weather-info"></div>
 
         <div class="forecast">
@@ -23,27 +23,54 @@
           <div class="forecast__container">
             <div class="forecast__card" id="monday">
               <h3 class="forecast__card-title">Monday</h3>
-              <p class="forecast__card-temp">--°C</p>
+              <div class="forecast__card-temp">
+                <span class="forecast__card-temp--celsius">--°C</span>
+                <img
+                  src="./assets/cloudy.png"
+                  class="forecast__card-icon"
+                  alt="Weather Icon"
+                  width="50px"
+                  height="50px"
+                />
+                <span class="forecast__card-temp--fahrenheit">--°F</span>
+              </div>
               <p class="forecast__card-condition">--</p>
             </div>
+            <!-- Repeat for Tuesday to Friday -->
             <div class="forecast__card" id="tuesday">
               <h3 class="forecast__card-title">Tuesday</h3>
-              <p class="forecast__card-temp">--°C</p>
+              <div class="forecast__card-temp">
+                <span class="forecast__card-temp--celsius">--°C</span>
+                <img src="#" class="forecast__card-icon" alt="Weather Icon" />
+                <span class="forecast__card-temp--fahrenheit">--°F</span>
+              </div>
               <p class="forecast__card-condition">--</p>
             </div>
             <div class="forecast__card" id="wednesday">
               <h3 class="forecast__card-title">Wednesday</h3>
-              <p class="forecast__card-temp">--°C</p>
+              <div class="forecast__card-temp">
+                <span class="forecast__card-temp--celsius">--°C</span>
+                <img src="#" class="forecast__card-icon" alt="Weather Icon" />
+                <span class="forecast__card-temp--fahrenheit">--°F</span>
+              </div>
               <p class="forecast__card-condition">--</p>
             </div>
             <div class="forecast__card" id="thursday">
               <h3 class="forecast__card-title">Thursday</h3>
-              <p class="forecast__card-temp">--°C</p>
+              <div class="forecast__card-temp">
+                <span class="forecast__card-temp--celsius">--°C</span>
+                <img src="#" class="forecast__card-icon" alt="Weather Icon" />
+                <span class="forecast__card-temp--fahrenheit">--°F</span>
+              </div>
               <p class="forecast__card-condition">--</p>
             </div>
             <div class="forecast__card" id="friday">
               <h3 class="forecast__card-title">Friday</h3>
-              <p class="forecast__card-temp">--°C</p>
+              <div class="forecast__card-temp">
+                <span class="forecast__card-temp--celsius">--°C</span>
+                <img src="#" class="forecast__card-icon" alt="Weather Icon" />
+                <span class="forecast__card-temp--fahrenheit">--°F</span>
+              </div>
               <p class="forecast__card-condition">--</p>
             </div>
           </div>
