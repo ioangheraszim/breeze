@@ -1,0 +1,147 @@
+/* Colors */
+:root {
+  --background-clr: #f0f4f8;
+  --primary-accent: #1e88e5;
+  --text-main: #333333;
+  --text-sec: #888888;
+  --card-bg: #ffffff33; /* Semi-transparent white */
+  --border-clr: #ffffff66; /* Softer white */
+  --hover-accent: #1565c0;
+}
+
+/* Global Resets */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url("https://images.unsplash.com/photo-1579003593419-98f949b9398f?q=80&w=2673&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.weather-app {
+  margin: 2rem auto;
+  width: min(100% - 2rem, 365px);
+  background: var(--card-bg);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(1.25rem);
+  box-shadow: 0 16px 32px #333333;
+  border: 1px solid var(--border-clr);
+}
+
+.weather-app__title {
+  padding: 1rem;
+  margin: 1rem;
+  color: var(--primary-accent);
+}
+
+.weather-app__input {
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid var(--border-clr);
+  border-radius: 1rem;
+  background: #ffffff4d;
+  color: var(--text-main);
+  font-size: 1rem;
+}
+
+.weather-app__input:focus {
+  border-color: var(--primary-accent);
+  outline: none;
+}
+
+.weather-app__button {
+  padding: 1rem 1.5rem;
+  background: var(--primary-accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-size: 1rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.weather-app__button:hover {
+  background: var(--hover-accent);
+}
+
+.weather-app__info {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--text-main);
+}
+
+.forecast {
+  margin-top: 2rem;
+}
+
+.forecast__title {
+  color: var(--primary-accent);
+  margin: 2rem 0;
+}
+
+.forecast__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.forecast__card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 16px 32px #0000001a;
+  border: 1px solid var(--border-clr);
+  flex: 1 1 10rem;
+}
+
+.forecast__card-title {
+  padding: 1rem;
+}
+
+.forecast__card-temp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 650px) {
+  .weather-app {
+    width: min(100% - 2rem, 1440px);
+  }
+
+  .weather-app__input {
+    width: 80%;
+  }
+
+  .weather-app__button {
+    padding: 1rem 1.5rem;
+    margin-left: 1rem;
+    width: 15%;
+  }
+}
+
+
+/*# sourceMappingURL=main.57ee22995bf0a1a876f8.css.map*/
