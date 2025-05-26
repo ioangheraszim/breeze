@@ -127,9 +127,9 @@ body {
   font-size: 1.25rem;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 650px) {
   .weather-app {
-    width: min(100% - 2rem, 1080px);
+    width: min(100% - 2rem, 1440px);
   }
 
   .weather-app__input {
@@ -138,6 +138,7 @@ body {
 
   .weather-app__button {
     padding: 1rem 1.5rem;
+    margin-left: 1rem;
     width: 15%;
   }
 }

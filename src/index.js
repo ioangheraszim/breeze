@@ -1,4 +1,6 @@
-import { greeting } from "./greeting.js";
+import { loadContent } from "./components/content";
 import "./styles.css";
 
-console.log(greeting);
+document.addEventListener("DOMContentLoaded", () => {
+  loadContent();
+});
