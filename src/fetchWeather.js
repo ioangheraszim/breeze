@@ -7,7 +7,6 @@ export async function fetchWeather(location) {
     if (!response) throw new Error("Failed to fetch weather data.");
 
     const data = await response.json();
-    console.log(data);
     return data;
   } catch (error) {
     console.log("Error fetching weather data:", error);
