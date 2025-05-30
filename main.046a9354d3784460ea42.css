@@ -89,6 +89,15 @@ body {
   color: var(--text-main);
 }
 
+.weather-app__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
 .forecast {
   margin-top: 2rem;
 }
@@ -129,7 +138,11 @@ body {
 
 @media (min-width: 650px) {
   .weather-app {
-    width: min(100% - 2rem, 1440px);
+    width: min(100% - 2rem, 900px);
+  }
+
+  .weather-app__container {
+    flex-wrap: nowrap;
   }
 
   .weather-app__input {
@@ -137,11 +150,9 @@ body {
   }
 
   .weather-app__button {
-    padding: 1rem 1.5rem;
-    margin-left: 1rem;
-    width: 15%;
+    width: 20%;
   }
 }
 
 
-/*# sourceMappingURL=main.57ee22995bf0a1a876f8.css.map*/
+/*# sourceMappingURL=main.046a9354d3784460ea42.css.map*/
