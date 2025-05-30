@@ -12,7 +12,7 @@ Breeze is a simple, responsive weather application built with vanilla JavaScript
 
 - 🔍 Search for weather by city name
 - 🌤️ Displays current weather and 5-day forecast
-- 🌡️ Temperatures shown in Celsius and Fahrenheit
+- 🌡️  Temperatures shown in Celsius and Fahrenheit
 - 🖼️ Weather icons for visual clarity
 - ⚡ Built with Webpack (modular JS structure)
 

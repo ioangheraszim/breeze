@@ -1,8 +1,9 @@
 import { fetchWeather } from "../fetchWeather";
-import { updateForecast } from "./ForecastCard";
+import { updateForecast } from "./forecastCard";
 
 export function InputForm() {
   const container = document.createElement("div");
+  container.classList.add("weather-app__container");
 
   const input = document.createElement("input");
   input.id = "location";
@@ -17,7 +18,9 @@ export function InputForm() {
     if (!location) return;
 
     const weatherData = await fetchWeather(location);
-    if (weatherData) updateForecast(weatherData);
+    if (weatherData && weatherData.days) {
+      updateForecast(weatherData.days);
+    }
   });
 
   container.append(input, button);

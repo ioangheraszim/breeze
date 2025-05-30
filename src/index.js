@@ -1,4 +1,4 @@
-import { loadContent } from "./components/content";
+import { loadContent } from "./components/Content";
 import "./styles.css";
 
 document.addEventListener("DOMContentLoaded", () => {
